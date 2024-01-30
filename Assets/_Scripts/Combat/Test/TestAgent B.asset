@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 436be87c82721b64db91883f6c58770c, type: 3}
+  m_Name: TestAgent B
+  m_EditorClassIdentifier: 
+  agent:
+    activeEncounter:
+      turnOrder: []
+      currentTurnIndex: 0
+      currentTurn:
+        agent:
+          activeEncounter:
+            turnOrder: []
+            currentTurnIndex: 0
+            currentTurn:
+              agent:
+                activeEncounter:
+                  turnOrder: []
+                  currentTurnIndex: 0
+                  currentTurn:
+                    agent:
+                      activeEncounter:
+                        currentTurnIndex: 0
+                      initiative: 0
+                      health: 100
+                    encounter:
+                      turnOrder: []
+                      currentTurnIndex: 0
+                      currentTurn:
+                        isTurnActive: 0
+                        actionPerTurn: 0
+                        actionPointSpent: 0
+                    isTurnActive: 0
+                    actionPerTurn: 0
+                    actionPointSpent: 0
+                initiative: 0
+                health: 100
+              encounter:
+                turnOrder: []
+                currentTurnIndex: 0
+                currentTurn:
+                  agent:
+                    activeEncounter:
+                      turnOrder: []
+                      currentTurnIndex: 0
+                      currentTurn:
+                        isTurnActive: 0
+                        actionPerTurn: 0
+                        actionPointSpent: 0
+                    initiative: 0
+                    health: 100
+                  encounter:
+                    turnOrder: []
+                    currentTurnIndex: 0
+                    currentTurn:
+                      agent:
+                        initiative: 0
+                        health: 100
+                      encounter:
+                        currentTurnIndex: 0
+                      isTurnActive: 0
+                      actionPerTurn: 0
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 0
+                  actionPointSpent: 0
+              isTurnActive: 0
+              actionPerTurn: 0
+              actionPointSpent: 0
+          initiative: 0
+          health: 100
+        encounter:
+          turnOrder: []
+          currentTurnIndex: 0
+          currentTurn:
+            agent:
+              activeEncounter:
+                turnOrder: []
+                currentTurnIndex: 0
+                currentTurn:
+                  agent:
+                    activeEncounter:
+                      turnOrder: []
+                      currentTurnIndex: 0
+                      currentTurn:
+                        isTurnActive: 0
+                        actionPerTurn: 0
+                        actionPointSpent: 0
+                    initiative: 0
+                    health: 100
+                  encounter:
+                    turnOrder: []
+                    currentTurnIndex: 0
+                    currentTurn:
+                      agent:
+                        initiative: 0
+                        health: 100
+                      encounter:
+                        currentTurnIndex: 0
+                      isTurnActive: 0
+                      actionPerTurn: 0
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 0
+                  actionPointSpent: 0
+              initiative: 0
+              health: 100
+            encounter:
+              turnOrder: []
+              currentTurnIndex: 0
+              currentTurn:
+                agent:
+                  activeEncounter:
+                    turnOrder: []
+                    currentTurnIndex: 0
+                    currentTurn:
+                      agent:
+                        initiative: 0
+                        health: 100
+                      encounter:
+                        currentTurnIndex: 0
+                      isTurnActive: 0
+                      actionPerTurn: 0
+                      actionPointSpent: 0
+                  initiative: 0
+                  health: 100
+                encounter:
+                  turnOrder: []
+                  currentTurnIndex: 0
+                  currentTurn:
+                    agent:
+                      activeEncounter:
+                        currentTurnIndex: 0
+                      initiative: 0
+                      health: 100
+                    encounter:
+                      turnOrder: []
+                      currentTurnIndex: 0
+                      currentTurn:
+                        isTurnActive: 0
+                        actionPerTurn: 0
+                        actionPointSpent: 0
+                    isTurnActive: 0
+                    actionPerTurn: 0
+                    actionPointSpent: 0
+                isTurnActive: 0
+                actionPerTurn: 0
+                actionPointSpent: 0
+            isTurnActive: 0
+            actionPerTurn: 0
+            actionPointSpent: 0
+        isTurnActive: 0
+        actionPerTurn: 0
+        actionPointSpent: 0
+    initiative: 5
+    health: 100
+  target: {fileID: 11400000, guid: 5744b78d04e0eaa4e9690ca22b48a154, type: 2}
