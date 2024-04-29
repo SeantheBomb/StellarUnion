@@ -27,7 +27,8 @@ public class PawnAgentView : MonoBehaviour
 
     private void OnDisable()
     {
-        //ent.Value.OnDisable(this);
+        agent.Value.OnDisable(this);
+        scheduler.OnDisable(this);
     }
 
     public void DoAction(PawnActionData action, System.Action OnComplete = null)

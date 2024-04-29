@@ -46,7 +46,7 @@ public class PawnAgentData
         if(action.ActionPointCost <= ActionPoints)
         {
             ActionPoints -= action.ActionPointCost;
-            Debug.Log($"PawnAgent: Process Action {action.name} costs {action.ActionPointCost} Action Points");
+            //Debug.Log($"PawnAgent: Process Action {action.name} costs {action.ActionPointCost} Action Points");
             return true;
         }
         return false;
@@ -58,6 +58,7 @@ public class PawnAgentData
 
     public void OnEnable(PawnAgentView view)
     {
+        planner.OnEnable(view);
         planner.Setup(view);
 
         foreach (var c in sensors)
@@ -78,13 +79,26 @@ public class PawnAgentData
         }
     }
 
-    //public void OnDisable(PawnAgentView view)
-    //{
-    //    foreach (var c in components)
-    //    {
-    //        c.Component.OnDisable(view);
-    //    }
-    //}
+    public void OnDisable(PawnAgentView view)
+    {
+        planner.OnDisable(view);
+        foreach (var c in sensors)
+        {
+            c.OnDisable(view);
+        }
+        foreach (var c in motors)
+        {
+            c.OnDisable(view);
+        }
+        foreach (var c in goals)
+        {
+            c.Value.OnDisable(view);
+        }
+        foreach (var c in actions)
+        {
+            c.Value.OnDisable(view);
+        }
+    }
 
 
 

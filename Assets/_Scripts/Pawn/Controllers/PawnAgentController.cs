@@ -106,6 +106,7 @@ public interface IPawnAgentControl
 
     public void EndAction(PawnActionEvent action, PawnAgentController pawn);
 
+
 }
 
 [System.Serializable]
@@ -155,17 +156,21 @@ public class PawnAgentTestControl : IPawnAgentControl
         this.turn = turn;
         view.agent.Value.ActionPoints = 3;
         DoFirstGoal();
+        Debug.Log($"PawnAgent: Agent {view.name} started their turn with 3 action points");
     }
 
     public void EndTurn(ActionTurn turn, PawnAgentController pawn)
     {
         controller.StopCoroutine(updateLoop);
+        pawn.view.scheduler.ClearActions();
+        Debug.Log($"PawnAgent: Agent {view.name} ended their turn");
     }
 
 
 
     public void StartAction(PawnActionEvent action, PawnAgentController pawn)
     {
+        Debug.Log($"PawnAgent: Agent {view.name} did action {action.action.name} costing {action.action.ActionPointCost} action points with {view.agent.Value.ActionPoints} remaining");
     }
 
     public void EndAction(PawnActionEvent action, PawnAgentController pawn)
@@ -192,19 +197,140 @@ public class PawnAgentTestControl : IPawnAgentControl
     IEnumerator HandleGoal()
     {
         yield return new WaitUntil(() => view.scheduler != null);
+        view.agent.Value.UpdatePlan(view);
         while (view.agent.Value.ActionPoints > 0)
         {
 
             if (view.scheduler.HasActionsQueued() == false)
                 view.agent.Value.UpdatePlan(view);
 
+
             bool isBusy = true;
             view.RunSchedule(() => isBusy = false);
 
+            yield return new WaitForSeconds(0.1f);
             yield return new WaitWhile(() => isBusy);
         }
         //if(turn != null)turn.EndTurn();
     }
 
 
+}
+
+
+[System.Serializable]
+public class PawnPlayerController : IPawnAgentControl
+{
+    PawnAgentController controller;
+
+    PawnAgentView view => controller.view;
+
+
+
+    public void OnEnable(PawnAgentController pawn)
+    {
+        controller = pawn;
+
+    }
+
+    public void OnDisable(PawnAgentController pawn)
+    {
+    }
+
+
+
+    public void StartEncounter(ActionEncounter encounter, PawnAgentController pawn)
+    {
+        EndTurnButton.instance.SetInteract(false);
+    }
+
+    public void EndEncounter(ActionEncounter encounter, PawnAgentController pawn)
+    {
+    }
+
+
+    public void StartTurn(ActionTurn turn, PawnAgentController pawn)
+    {
+        EndTurnButton.OnEndTurn += () => turn.EndTurn();
+        EndTurnButton.instance.SetInteract(true);
+    }
+
+    public void EndTurn(ActionTurn turn, PawnAgentController pawn)
+    {
+        EndTurnButton.OnEndTurn = null;
+        EndTurnButton.instance.SetInteract(false);
+    }
+
+
+
+
+    public void StartAction(PawnActionEvent action, PawnAgentController pawn)
+    {
+        EndTurnButton.instance.SetInteract(false);
+    }
+
+    public void EndAction(PawnActionEvent action, PawnAgentController pawn)
+    {
+        EndTurnButton.instance.SetInteract(true);
+    }
+
+
+}
+
+
+[System.Serializable]
+public class PawnNPCController : IPawnAgentControl
+{
+    PawnAgentController controller;
+
+    PawnAgentView view => controller.view;
+
+
+
+    public void OnEnable(PawnAgentController pawn)
+    {
+        controller = pawn;
+
+    }
+
+    public void OnDisable(PawnAgentController pawn)
+    {
+
+    }
+
+
+
+    public void StartEncounter(ActionEncounter encounter, PawnAgentController pawn)
+    {
+
+    }
+
+    public void EndEncounter(ActionEncounter encounter, PawnAgentController pawn)
+    {
+    }
+
+
+    public void StartTurn(ActionTurn turn, PawnAgentController pawn)
+    {
+
+    }
+
+    public void EndTurn(ActionTurn turn, PawnAgentController pawn)
+    {
+
+    }
+
+
+
+    public void StartAction(PawnActionEvent action, PawnAgentController pawn)
+    {
+    }
+
+    public void EndAction(PawnActionEvent action, PawnAgentController pawn)
+    {
+        if(view.agent.Value.ActionPoints <= 0 || view.scheduler.HasActionsQueued() == false)
+        {
+            view.activeEncounter.GetAgentTurn(view).EndTurn();
+        }
+    }
 }

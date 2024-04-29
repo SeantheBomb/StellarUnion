@@ -59,7 +59,7 @@ public class PawnConsiderData
         {
             actions.AddRange(c.GetAffectingAction());
         }
-        return actions.ToArray();
+        return actions.Distinct().ToArray();
     }
 
     public static PawnActionData[] GetDesiredActions(PawnGoalData goal)
@@ -79,7 +79,7 @@ public class PawnConsiderData
         {
             actions.AddRange(c.Value.GetAffectingAction());
         }
-        return actions.ToArray();
+        return actions.Distinct().ToArray();
     }
 
     #endregion

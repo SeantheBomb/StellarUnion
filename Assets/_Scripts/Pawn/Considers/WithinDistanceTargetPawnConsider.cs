@@ -18,7 +18,7 @@ public class WithinDistanceTargetPawnConsider : PawnConsiderCondition
     public override bool EvaluateCondition(PawnAgentView view)
     {
         float d = Vector3.Distance(sourceTarget.GetTarget(view), destinationTarget.GetTarget(view));
-        Debug.Log($"PawnConsiderData: Distance between view {view.name} and target {view.target.name} is {d}. Are we within {distance}? {d <= distance}");
+        Debug.Log($"PawnConsiderData: Distance between view {sourceTarget.GetTarget(view)} and target {destinationTarget.GetTarget(view)} is {d}. Are we within {distance}? {d <= distance}");
         return  d <= distance;
     }
 }

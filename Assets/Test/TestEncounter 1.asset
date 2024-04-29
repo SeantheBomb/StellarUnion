@@ -13,45 +13,2425 @@ MonoBehaviour:
   m_Name: TestEncounter 1
   m_EditorClassIdentifier: Assembly-CSharp::TestActionEncounter
   encounter:
-    turnOrder: []
-    currentTurnIndex: 0
-    currentTurn:
-      agent: {fileID: 0}
+    turnOrder:
+    - agent: {fileID: 0}
       encounter:
-        turnOrder: []
-        currentTurnIndex: 0
-        currentTurn:
-          agent: {fileID: 0}
+        turnOrder:
+        - agent: {fileID: 0}
           encounter:
-            turnOrder: []
-            currentTurnIndex: 0
-            currentTurn:
-              agent: {fileID: 0}
+            turnOrder:
+            - agent: {fileID: 0}
               encounter:
-                turnOrder: []
-                currentTurnIndex: 0
-                currentTurn:
-                  agent: {fileID: 0}
+                turnOrder:
+                - agent: {fileID: 0}
                   encounter:
-                    turnOrder: []
-                    currentTurnIndex: 0
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
                     currentTurn:
                       agent: {fileID: 0}
                       encounter:
-                        currentTurnIndex: 0
-                      isTurnActive: 0
-                      actionPerTurn: 0
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
                       actionPointSpent: 0
                   isTurnActive: 0
-                  actionPerTurn: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
                   actionPointSpent: 0
               isTurnActive: 0
-              actionPerTurn: 0
+              actionPerTurn: 1
+              actionPointSpent: 0
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+            currentTurnIndex: 1
+            currentTurn:
+              agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
               actionPointSpent: 0
           isTurnActive: 0
-          actionPerTurn: 0
+          actionPerTurn: 1
+          actionPointSpent: 0
+        - agent: {fileID: 0}
+          encounter:
+            turnOrder:
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 0
+              actionPerTurn: 1
+              actionPointSpent: 0
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+            currentTurnIndex: 1
+            currentTurn:
+              agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+          isTurnActive: 1
+          actionPerTurn: 1
+          actionPointSpent: 0
+        currentTurnIndex: 1
+        currentTurn:
+          agent: {fileID: 0}
+          encounter:
+            turnOrder:
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 0
+              actionPerTurn: 1
+              actionPointSpent: 0
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+            currentTurnIndex: 1
+            currentTurn:
+              agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+          isTurnActive: 1
+          actionPerTurn: 1
           actionPointSpent: 0
       isTurnActive: 0
-      actionPerTurn: 0
+      actionPerTurn: 1
+      actionPointSpent: 0
+    - agent: {fileID: 0}
+      encounter:
+        turnOrder:
+        - agent: {fileID: 0}
+          encounter:
+            turnOrder:
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 0
+              actionPerTurn: 1
+              actionPointSpent: 0
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+            currentTurnIndex: 1
+            currentTurn:
+              agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+          isTurnActive: 0
+          actionPerTurn: 1
+          actionPointSpent: 0
+        - agent: {fileID: 0}
+          encounter:
+            turnOrder:
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 0
+              actionPerTurn: 1
+              actionPointSpent: 0
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+            currentTurnIndex: 1
+            currentTurn:
+              agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+          isTurnActive: 1
+          actionPerTurn: 1
+          actionPointSpent: 0
+        currentTurnIndex: 1
+        currentTurn:
+          agent: {fileID: 0}
+          encounter:
+            turnOrder:
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 0
+              actionPerTurn: 1
+              actionPointSpent: 0
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+            currentTurnIndex: 1
+            currentTurn:
+              agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+          isTurnActive: 1
+          actionPerTurn: 1
+          actionPointSpent: 0
+      isTurnActive: 1
+      actionPerTurn: 1
+      actionPointSpent: 0
+    currentTurnIndex: 1
+    currentTurn:
+      agent: {fileID: 0}
+      encounter:
+        turnOrder:
+        - agent: {fileID: 0}
+          encounter:
+            turnOrder:
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 0
+              actionPerTurn: 1
+              actionPointSpent: 0
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+            currentTurnIndex: 1
+            currentTurn:
+              agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+          isTurnActive: 0
+          actionPerTurn: 1
+          actionPointSpent: 0
+        - agent: {fileID: 0}
+          encounter:
+            turnOrder:
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 0
+              actionPerTurn: 1
+              actionPointSpent: 0
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+            currentTurnIndex: 1
+            currentTurn:
+              agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+          isTurnActive: 1
+          actionPerTurn: 1
+          actionPointSpent: 0
+        currentTurnIndex: 1
+        currentTurn:
+          agent: {fileID: 0}
+          encounter:
+            turnOrder:
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 0
+              actionPerTurn: 1
+              actionPointSpent: 0
+            - agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+            currentTurnIndex: 1
+            currentTurn:
+              agent: {fileID: 0}
+              encounter:
+                turnOrder:
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 0
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                - agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+                currentTurnIndex: 1
+                currentTurn:
+                  agent: {fileID: 0}
+                  encounter:
+                    turnOrder:
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 0
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    - agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                    currentTurnIndex: 1
+                    currentTurn:
+                      agent: {fileID: 0}
+                      encounter:
+                        currentTurnIndex: 1
+                      isTurnActive: 1
+                      actionPerTurn: 1
+                      actionPointSpent: 0
+                  isTurnActive: 1
+                  actionPerTurn: 1
+                  actionPointSpent: 0
+              isTurnActive: 1
+              actionPerTurn: 1
+              actionPointSpent: 0
+          isTurnActive: 1
+          actionPerTurn: 1
+          actionPointSpent: 0
+      isTurnActive: 1
+      actionPerTurn: 1
       actionPointSpent: 0
   agents: []

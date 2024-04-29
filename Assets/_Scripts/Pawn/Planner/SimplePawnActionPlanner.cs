@@ -36,7 +36,7 @@ public class SimplePawnActionPlanner : PawnActionPlanner
 
         if(prerequisite.Length > 0)
         {
-            //Debug.Log($"PawnAgent: {agentView.name} has {prerequisite.Length} prereqs for {action.name} action before it can be added to plan");
+            Debug.Log($"PawnAgent: {agentView.name} has {prerequisite.Length} prereqs for {action.name} action before it can be added to plan");
 
             PawnActionData pr = GetLowestCostAction(prerequisite);
             if(pr != default)
@@ -50,7 +50,7 @@ public class SimplePawnActionPlanner : PawnActionPlanner
             }
         }
         plan.Add(action);
-        //Debug.Log($"PawnAgent: {agentView.name} added {action.name} action to plan");
+        Debug.Log($"PawnAgent: {agentView.name} added {action.name} action to plan");
     }
 
 

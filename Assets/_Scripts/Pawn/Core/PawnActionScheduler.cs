@@ -70,12 +70,12 @@ public class PawnActionScheduler : PawnComponent
     public void QueueAction(PawnActionData action)
     {
         actionScheduler.AddLast(action);
-        //Debug.Log($"PawnAgent: {pawnAgent.name} scheduled action {action.name}");
+        Debug.Log($"PawnAgent: {pawnAgent.name} scheduled action {action.name}");
     }
 
     public void QueueActions(PawnActionPlan plan)
     {
-        //Debug.Log($"PawnAgent: {pawnAgent.name} start scheduling actions count {plan.plan.Length}");
+        Debug.Log($"PawnAgent: {pawnAgent.name} start scheduling actions count {plan.plan.Length}");
         foreach (PawnActionData a in plan)
         {
             QueueAction(a);
