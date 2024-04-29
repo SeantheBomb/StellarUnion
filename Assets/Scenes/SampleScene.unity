@@ -352,3 +352,309 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1074937587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1074937589}
+  - component: {fileID: 1074937588}
+  m_Layer: 0
+  m_Name: Player A
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1074937588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074937587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eac8c047ee9c14d4781b882901d8f997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent:
+    activeEncounter:
+      turnOrder: []
+      currentTurnIndex: 0
+      currentTurn:
+        agent:
+          activeEncounter:
+            turnOrder: []
+            currentTurnIndex: 0
+            currentTurn:
+              agent:
+                activeEncounter:
+                  turnOrder: []
+                  currentTurnIndex: 0
+                  currentTurn:
+                    agent:
+                      activeEncounter:
+                        currentTurnIndex: 0
+                      initiative: 0
+                      health: 100
+                    isTurnActive: 0
+                    actionPerTurn: 0
+                    actionPointSpent: 0
+                initiative: 0
+                health: 100
+              isTurnActive: 0
+              actionPerTurn: 0
+              actionPointSpent: 0
+          initiative: 0
+          health: 100
+        isTurnActive: 0
+        actionPerTurn: 0
+        actionPointSpent: 0
+    initiative: 0
+    health: 100
+  currentEncounter:
+    turnOrder: []
+    currentTurnIndex: 0
+    currentTurn:
+      agent:
+        activeEncounter:
+          turnOrder: []
+          currentTurnIndex: 0
+          currentTurn:
+            agent:
+              activeEncounter:
+                turnOrder: []
+                currentTurnIndex: 0
+                currentTurn:
+                  agent:
+                    activeEncounter:
+                      turnOrder: []
+                      currentTurnIndex: 0
+                      currentTurn:
+                        isTurnActive: 0
+                        actionPerTurn: 0
+                        actionPointSpent: 0
+                    initiative: 0
+                    health: 100
+                  isTurnActive: 0
+                  actionPerTurn: 0
+                  actionPointSpent: 0
+              initiative: 0
+              health: 100
+            isTurnActive: 0
+            actionPerTurn: 0
+            actionPointSpent: 0
+        initiative: 0
+        health: 100
+      isTurnActive: 0
+      actionPerTurn: 0
+      actionPointSpent: 0
+  agentTurn:
+    agent:
+      activeEncounter:
+        turnOrder: []
+        currentTurnIndex: 0
+        currentTurn:
+          agent:
+            activeEncounter:
+              turnOrder: []
+              currentTurnIndex: 0
+              currentTurn:
+                agent:
+                  activeEncounter:
+                    turnOrder: []
+                    currentTurnIndex: 0
+                    currentTurn:
+                      agent:
+                        initiative: 0
+                        health: 100
+                      isTurnActive: 0
+                      actionPerTurn: 0
+                      actionPointSpent: 0
+                  initiative: 0
+                  health: 100
+                isTurnActive: 0
+                actionPerTurn: 0
+                actionPointSpent: 0
+            initiative: 0
+            health: 100
+          isTurnActive: 0
+          actionPerTurn: 0
+          actionPointSpent: 0
+      initiative: 0
+      health: 100
+    isTurnActive: 0
+    actionPerTurn: 0
+    actionPointSpent: 0
+--- !u!4 &1074937589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074937587}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1809733779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1809733780}
+  - component: {fileID: 1809733781}
+  m_Layer: 0
+  m_Name: Player B
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1809733780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809733779}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1809733781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809733779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eac8c047ee9c14d4781b882901d8f997, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent:
+    activeEncounter:
+      turnOrder: []
+      currentTurnIndex: 0
+      currentTurn:
+        agent:
+          activeEncounter:
+            turnOrder: []
+            currentTurnIndex: 0
+            currentTurn:
+              agent:
+                activeEncounter:
+                  turnOrder: []
+                  currentTurnIndex: 0
+                  currentTurn:
+                    agent:
+                      activeEncounter:
+                        currentTurnIndex: 0
+                      initiative: 0
+                      health: 100
+                    isTurnActive: 0
+                    actionPerTurn: 0
+                    actionPointSpent: 0
+                initiative: 0
+                health: 100
+              isTurnActive: 0
+              actionPerTurn: 0
+              actionPointSpent: 0
+          initiative: 0
+          health: 100
+        isTurnActive: 0
+        actionPerTurn: 0
+        actionPointSpent: 0
+    initiative: 0
+    health: 100
+  currentEncounter:
+    turnOrder: []
+    currentTurnIndex: 0
+    currentTurn:
+      agent:
+        activeEncounter:
+          turnOrder: []
+          currentTurnIndex: 0
+          currentTurn:
+            agent:
+              activeEncounter:
+                turnOrder: []
+                currentTurnIndex: 0
+                currentTurn:
+                  agent:
+                    activeEncounter:
+                      turnOrder: []
+                      currentTurnIndex: 0
+                      currentTurn:
+                        isTurnActive: 0
+                        actionPerTurn: 0
+                        actionPointSpent: 0
+                    initiative: 0
+                    health: 100
+                  isTurnActive: 0
+                  actionPerTurn: 0
+                  actionPointSpent: 0
+              initiative: 0
+              health: 100
+            isTurnActive: 0
+            actionPerTurn: 0
+            actionPointSpent: 0
+        initiative: 0
+        health: 100
+      isTurnActive: 0
+      actionPerTurn: 0
+      actionPointSpent: 0
+  agentTurn:
+    agent:
+      activeEncounter:
+        turnOrder: []
+        currentTurnIndex: 0
+        currentTurn:
+          agent:
+            activeEncounter:
+              turnOrder: []
+              currentTurnIndex: 0
+              currentTurn:
+                agent:
+                  activeEncounter:
+                    turnOrder: []
+                    currentTurnIndex: 0
+                    currentTurn:
+                      agent:
+                        initiative: 0
+                        health: 100
+                      isTurnActive: 0
+                      actionPerTurn: 0
+                      actionPointSpent: 0
+                  initiative: 0
+                  health: 100
+                isTurnActive: 0
+                actionPerTurn: 0
+                actionPointSpent: 0
+            initiative: 0
+            health: 100
+          isTurnActive: 0
+          actionPerTurn: 0
+          actionPointSpent: 0
+      initiative: 0
+      health: 100
+    isTurnActive: 0
+    actionPerTurn: 0
+    actionPointSpent: 0

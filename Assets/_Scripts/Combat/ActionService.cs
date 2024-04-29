@@ -10,25 +10,25 @@ using UnityEditor.PackageManager;
 public class ActionService : Service<ActionService>
 {
 
-    public Action<ActionData> OnAction;
+    public static Action<PawnActionEvent> OnActionStart, OnActionEnd;
 
-    public Action<ActionEncounter> OnEncounterStart, OnEncounterEnd;
+    public static Action<ActionEncounter> OnEncounterStart, OnEncounterEnd;
 
     [SerializeField]
     private ActionEncounter Encounter;
 
 
-    public void DoAction(ActionData action)
-    {
-        action.DoAction();
-        OnAction?.Invoke(action);
-        action?.source?.OnDoAction(action);
-        action?.target?.OnReceiveAction(action);
-    }
+    //public void DoAction(PawnActionEvent action)
+    //{
+    //    //action.DoAction();
+    //    OnAction?.Invoke(action);
+    //    //action?.source?.OnDoAction(action);
+    //    //action?.target?.OnReceiveAction(action);
+    //}
 
-    public ActionEncounter StartEncounter(ActionAgent[] agents)
+    public ActionEncounter StartEncounter(PawnAgentView[] agents)
     {
-        Encounter = new ActionEncounter(this, agents);
+        Encounter = new ActionEncounter(agents);
         return Encounter;
     }
 
@@ -55,13 +55,40 @@ public class ActionService : Service<ActionService>
     }
 
 
+
 }
+
+[Serializable]
+public struct PawnActionEvent
+{
+    public PawnActionData action;
+    public PawnAgentView source;
+    public PawnAgentView target;
+
+    //public static System.Action<PawnActionEvent> OnAction;
+
+    public void Raise(System.Action OnComplete)
+    {
+        PawnActionEvent t = this;
+        OnComplete += () => ActionService.OnActionEnd(t);
+        ActionService.OnActionStart?.Invoke(t);
+        action.DoAction(source, OnComplete);
+    }
+
+    public IEnumerator RaiseTask()
+    {
+        ActionService.OnActionStart?.Invoke(this);
+        yield return action.DoActionCoroutine(source);
+        ActionService.OnActionEnd?.Invoke(this);
+    }
+}
+
 
 [Serializable]
 public class ActionEncounter
 {
 
-    public ActionService service;
+    //public ActionService service;
 
     [SerializeField]ActionTurn[] turnOrder;
 
@@ -72,17 +99,17 @@ public class ActionEncounter
     public Action<ActionTurn> OnStartTurn, OnEndTurn;
 
 
-    public ActionEncounter(ActionService service, ActionAgent[] agents)
+    public ActionEncounter(PawnAgentView[] agents)
     {
-        this.service = service;
+        //this.service = service;
 
-        foreach(ActionAgent a in agents)
+        foreach(PawnAgentView a in agents)
         {
             a.activeEncounter = this;
         }
         turnOrder = CreateTurnOrder(agents);
 
-        service.OnEncounterStart?.Invoke(this);
+        ActionService.OnEncounterStart?.Invoke(this);
         GoToNextTurn();
     }
 
@@ -93,7 +120,7 @@ public class ActionEncounter
             a.agent.activeEncounter = null;
         }
         turnOrder = null;
-        service.OnEncounterEnd?.Invoke(this);
+        ActionService.OnEncounterEnd?.Invoke(this);
     }
 
     public void GoToNextTurn()
@@ -113,22 +140,22 @@ public class ActionEncounter
         }
     }
 
-    public bool DoAction(ActionData action)
-    {
-        if (action.source != currentTurn.agent)
-            return false;
-        if (currentTurn.actionPerTurn < currentTurn.actionPointSpent)
-            return false;
-        service.DoAction(action);
-        return true;
-    }
+    //public bool DoAction(PawnActionEvent action)
+    //{
+    //    if (action.source != currentTurn.agent)
+    //        return false;
+    //    if (currentTurn.actionPerTurn < currentTurn.actionPointSpent)
+    //        return false;
+    //    service.DoAction(action);
+    //    return true;
+    //}
 
-    public bool IsAgentTurn(ActionAgent agent)
+    public bool IsAgentTurn(PawnAgentView agent)
     {
         return agent == currentTurn.agent;
     }
 
-    public ActionTurn GetAgentTurn(ActionAgent agent)
+    public ActionTurn GetAgentTurn(PawnAgentView agent)
     {
         foreach(ActionTurn a in turnOrder)
         {
@@ -138,14 +165,19 @@ public class ActionEncounter
         return null;
     }
 
-    public ActionTurn[] CreateTurnOrder(ActionAgent[] agents)
+    public ActionTurn GetCurrentTurn()
+    {
+        return currentTurn;
+    }
+
+    public ActionTurn[] CreateTurnOrder(PawnAgentView[] agents)
     {
         ActionTurn[] turnOrder = new ActionTurn[agents.Length];
         for (int i = 0; i < agents.Length; i++)
         {
             turnOrder[i] = new ActionTurn(agents[i], this);
         }
-        turnOrder.OrderByDescending((a) => a.agent.initiative);
+        turnOrder.OrderByDescending((a) => a.agent.agent.Value.Initiative);
         return turnOrder;
     }
 
@@ -154,7 +186,7 @@ public class ActionEncounter
 [Serializable]
 public class ActionTurn
 {
-    public ActionAgent agent;
+    public PawnAgentView agent;
     [SerializeField] ActionEncounter encounter;
 
     public bool isTurnActive;
@@ -164,17 +196,17 @@ public class ActionTurn
 
     public int actionPointRemaining => actionPerTurn - actionPointSpent;
 
-    public ActionTurn(ActionAgent agent, ActionEncounter encounter)
+    public ActionTurn(PawnAgentView agent, ActionEncounter encounter)
     {
         this.agent = agent;
         this.encounter = encounter;
-        encounter.service.OnAction += OnAction;
+        //ActionService.OnActionStart += OnAction;
     }
 
-    ~ActionTurn()
-    {
-        encounter.service.OnAction -= OnAction;
-    }
+    //~ActionTurn()
+    //{
+    //    ActionService.OnAction -= OnAction;
+    //}
 
     public void OnTurnStart()
     {
@@ -195,62 +227,62 @@ public class ActionTurn
         encounter.OnEndTurn?.Invoke(this);
     }
 
-    private void OnAction(ActionData data)
-    {
-        if (isTurnActive == false)
-            return;
-        if (data.source != agent)
-            return;
-        actionPointSpent += data.ActionPointCost;
-        if(actionPointSpent >= actionPerTurn)
-        {
-            isTurnActive = false;
-        }
-    }
+    //private void OnAction(PawnActionEvent data)
+    //{
+    //    if (isTurnActive == false)
+    //        return;
+    //    if (data.source != agent)
+    //        return;
+    //    actionPointSpent += data.action.ActionPointCost;
+    //    if (actionPointSpent >= actionPerTurn)
+    //    {
+    //        isTurnActive = false;
+    //    }
+    //}
 }
 
-[Serializable]
-public class ActionAgent
-{
-    public System.Action<ActionData> OnDoAction, OnReceiveAction;
+//[Serializable]
+//public class ActionAgent
+//{
+//    public System.Action<ActionData> OnDoAction, OnReceiveAction;
 
-    public ActionEncounter activeEncounter;
-    public int initiative;
-    public float health = 100;
+//    public ActionEncounter activeEncounter;
+//    public int initiative;
+//    public float health = 100;
 
-}
-
-
-[Serializable]
-public abstract class ActionData
-{
-
-    public System.Action<ActionAgent, ActionAgent> OnDoActionEvent;
-
-    public ActionAgent source;
-    public ActionAgent target;
-
-    public int ActionPointCost = 1;
+//}
 
 
-    public void DoAction(ActionAgent source, ActionAgent target)
-    {
-        OnDoAction(source, target);
-        OnDoActionEvent?.Invoke(source, target);
-    }
+//[Serializable]
+//public abstract class ActionData
+//{
 
-    protected abstract void OnDoAction(ActionAgent source, ActionAgent target);
+//    public System.Action<ActionAgent, ActionAgent> OnDoActionEvent;
 
-}
+//    public ActionAgent source;
+//    public ActionAgent target;
 
-[Serializable]
-public class AttackAction : ActionData
-{
+//    public int ActionPointCost = 1;
 
-    public float damage = 10;
 
-    protected override void OnDoAction(ActionAgent source, ActionAgent target)
-    {
-        target.health -= damage;
-    }
-}
+//    public void DoAction(ActionAgent source, ActionAgent target)
+//    {
+//        OnDoAction(source, target);
+//        OnDoActionEvent?.Invoke(source, target);
+//    }
+
+//    protected abstract void OnDoAction(ActionAgent source, ActionAgent target);
+
+//}
+
+//[Serializable]
+//public class AttackAction : ActionData
+//{
+
+//    public float damage = 10;
+
+//    protected override void OnDoAction(ActionAgent source, ActionAgent target)
+//    {
+//        target.health -= damage;
+//    }
+//}

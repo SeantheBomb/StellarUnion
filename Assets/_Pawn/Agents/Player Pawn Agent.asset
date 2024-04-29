@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1e2d5444c0145d43b53f0042f80df26, type: 3}
+  m_Name: Player Pawn Agent
+  m_EditorClassIdentifier: 
+  Value:
+    sensors: []
+    motors:
+    - rid: 4970871836299493377
+    goals:
+    - _useConstant: 0
+      ConstantValue:
+        name: 
+        priority: 0
+        requiredConsiders: []
+        desiredConsiders: []
+      Variable: {fileID: 11400000, guid: c21c98c5bd370de489ee22023e61e34c, type: 2}
+    actions:
+    - _useConstant: 0
+      ConstantValue:
+        name: 
+        priority: 0
+        requiredConsiders: []
+        desiredConsiders: []
+        ActionPointCost: 0
+        actions: []
+      Variable: {fileID: 11400000, guid: d2dfe8295348e7d4a92f6f5934555416, type: 2}
+    planner:
+      rid: 4970871836299493378
+    ActionPoints: 80
+    Initiative: 5
+  references:
+    version: 2
+    RefIds:
+    - rid: 4970871836299493377
+      type: {class: PawnMovementMotorData, ns: , asm: Assembly-CSharp}
+      data:
+        moveSpeed: 1
+        stoppingDistance: 0.1
+        IsMoving: 0
+    - rid: 4970871836299493378
+      type: {class: SimplePawnActionPlanner, ns: , asm: Assembly-CSharp}

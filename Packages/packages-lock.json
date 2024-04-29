@@ -270,7 +270,7 @@
       "url": "https://packages.unity.com"
     },
     "corruptedmedia.corruptedcore": {
-      "version": "file:C:/Users/SeanF/OneDrive/Documents/CorruptedCore",
+      "version": "file:C:/Users/SeanF/Documents/CorruptedCore",
       "depth": 0,
       "source": "local",
       "dependencies": {}

@@ -8,12 +8,12 @@ public class TestActionEncounter : ScriptableObject
 
     public ActionEncounter encounter;
 
-    public TestActionAgent[] agents;
+    public PawnAgentView[] agents;
 
     [Button]
     public void StartEncounter()
     {
-        encounter = ActionService.GetService().StartEncounter(GetAgents(agents));
+        encounter = ActionService.GetService().StartEncounter(FindObjectsOfType<PawnAgentView>());
     }
 
     [Button]
@@ -22,14 +22,23 @@ public class TestActionEncounter : ScriptableObject
         encounter.EndEncounter();
     }
 
-    public ActionAgent[] GetAgents(TestActionAgent[] agents)
+    [Button]
+    public void EndCurrentTurn()
     {
-        ActionAgent[] actionAgents = new ActionAgent[agents.Length];
-        for (int i = 0; i < agents.Length; i++)
-        {
-            actionAgents[i] = agents[i].agent;
-        }
-        return actionAgents;
+        if (encounter == null)
+            return;
+
+        encounter.GetCurrentTurn().EndTurn();
     }
+
+    //public PawnAgentView[] GetAgents(PawnAgentView[] agents)
+    //{
+    //    PawnAgentView[] actionAgents = new PawnAgentView[agents.Length];
+    //    for (int i = 0; i < agents.Length; i++)
+    //    {
+    //        actionAgents[i] = agents[i].agent;
+    //    }
+    //    return actionAgents;
+    //}
 
 }

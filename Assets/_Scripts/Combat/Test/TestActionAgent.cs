@@ -1,28 +1,28 @@
-using NaughtyAttributes;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+//using NaughtyAttributes;
+//using System.Collections;
+//using System.Collections.Generic;
+//using UnityEngine;
 
 
-[CreateAssetMenu(fileName = "TestAgent", menuName ="Combat/Test/Agent")]
-public class TestActionAgent : ScriptableObject
-{
+//[CreateAssetMenu(fileName = "TestAgent", menuName ="Combat/Test/Agent")]
+//public class TestActionAgent : ScriptableObject
+//{
 
-    public ActionAgent agent;
+//    public ActionAgent agent;
 
-    public AttackAction attack;
+//    public AttackAction attack;
 
-    public TestActionAgent target;
+//    public TestActionAgent target;
 
 
-    [Button]
-    public void AttackTarget()
-    {
+//    [Button]
+//    public void AttackTarget()
+//    {
 
-        attack.source = agent;
-        attack.target = target.agent;
+//        attack.source = agent;
+//        attack.target = target.agent;
 
-        agent.activeEncounter.DoAction(attack);
-    }
+//        agent.activeEncounter.DoAction(attack);
+//    }
 
-}
+//}

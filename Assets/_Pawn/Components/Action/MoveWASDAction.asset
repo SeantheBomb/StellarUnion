@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87c78add87fd25b42ba87f3ceb935522, type: 3}
+  m_Name: MoveWASDAction
+  m_EditorClassIdentifier: 
+  Value:
+    name: Move Towards Target
+    priority: 0
+    requiredConsiders: []
+    desiredConsiders:
+    - _useConstant: 0
+      ConstantValue:
+        conditions: []
+      Variable: {fileID: 11400000, guid: c018e4e262b21d945ba3ae2b1b9eb6ac, type: 2}
+    ActionPointCost: 1
+    actions:
+    - rid: 4970871806392795278
+  references:
+    version: 2
+    RefIds:
+    - rid: 4970871806392795278
+      type: {class: MoveTowardTargetPawnAction, ns: , asm: Assembly-CSharp}
+      data:
+        target:
+          rid: 4970871806392795280
+        maxDistance: 1
+        speedMultiplier: 1
+    - rid: 4970871806392795280
+      type: {class: PawnWASDOffsetTarget, ns: , asm: Assembly-CSharp}
+      data:
+        W: {x: 0, y: 1}
+        A: {x: -1, y: 0}
+        S: {x: 0, y: -1}
+        D: {x: 1, y: 0}
+        origin:
+          rid: 4970871806392795281
+    - rid: 4970871806392795281
+      type: {class: PawnThisTarget, ns: , asm: Assembly-CSharp}

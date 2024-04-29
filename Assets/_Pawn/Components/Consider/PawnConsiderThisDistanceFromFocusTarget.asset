@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b5b92d1de653c04e9cf41d177f75b8e, type: 3}
+  m_Name: PawnConsiderThisDistanceFromFocusTarget
+  m_EditorClassIdentifier: 
+  Value:
+    conditions:
+    - rid: 4970871806392795138
+  references:
+    version: 2
+    RefIds:
+    - rid: 4970871806392795138
+      type: {class: WithinDistanceTargetPawnConsider, ns: , asm: Assembly-CSharp}
+      data:
+        sourceTarget:
+          rid: 4970871806392795264
+        destinationTarget:
+          rid: 4970871806392795265
+        distance: 3
+    - rid: 4970871806392795264
+      type: {class: PawnThisTarget, ns: , asm: Assembly-CSharp}
+    - rid: 4970871806392795265
+      type: {class: PawnFocusTarget, ns: , asm: Assembly-CSharp}

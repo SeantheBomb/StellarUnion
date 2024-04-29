@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87c78add87fd25b42ba87f3ceb935522, type: 3}
+  m_Name: MoveTowardsTargetAction
+  m_EditorClassIdentifier: 
+  Value:
+    name: Move Towards Target
+    priority: 0
+    requiredConsiders: []
+    desiredConsiders:
+    - _useConstant: 0
+      ConstantValue:
+        conditions: []
+      Variable: {fileID: 11400000, guid: cd0d644b6c393e74c9ec55e04b8c31be, type: 2}
+    ActionPointCost: 1
+    actions:
+    - rid: 4970871806392795137
+  references:
+    version: 2
+    RefIds:
+    - rid: 4970871806392795137
+      type: {class: MoveTowardTargetPawnAction, ns: , asm: Assembly-CSharp}
+      data:
+        target:
+          rid: 4970871806392795277
+        maxDistance: 1
+        speedMultiplier: 1
+    - rid: 4970871806392795277
+      type: {class: PawnFocusTarget, ns: , asm: Assembly-CSharp}
