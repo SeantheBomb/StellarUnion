@@ -177,7 +177,7 @@ public class ActionEncounter
         {
             turnOrder[i] = new ActionTurn(agents[i], this);
         }
-        turnOrder.OrderByDescending((a) => a.agent.agent.Value.Initiative);
+        turnOrder.OrderByDescending((a) => a.agent.agent.Value.stats.capabilities.initiative);
         return turnOrder;
     }
 
@@ -187,7 +187,7 @@ public class ActionEncounter
 public class ActionTurn
 {
     public PawnAgentView agent;
-    [SerializeField] ActionEncounter encounter;
+    ActionEncounter encounter;
 
     public bool isTurnActive;
 

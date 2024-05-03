@@ -127,7 +127,7 @@ public class PawnAgentTestControl : IPawnAgentControl
     {
         controller = pawn;
 
-        view.agent.Value.ActionPoints = int.MaxValue;
+        view.agent.Value.stats.vitals.ActionPoints = int.MaxValue;
 
         DoFirstGoal();
     }
@@ -141,7 +141,7 @@ public class PawnAgentTestControl : IPawnAgentControl
     public void StartEncounter(ActionEncounter encounter, PawnAgentController pawn)
     {
         this.encounter = encounter;
-        view.agent.Value.ActionPoints = int.MaxValue;
+        view.agent.Value.stats.vitals.ActionPoints = int.MaxValue;
         controller.StopCoroutine(updateLoop);
     }
 
@@ -154,7 +154,7 @@ public class PawnAgentTestControl : IPawnAgentControl
     public void StartTurn(ActionTurn turn, PawnAgentController pawn)
     {
         this.turn = turn;
-        view.agent.Value.ActionPoints = 3;
+        view.agent.Value.stats.vitals.ActionPoints += view.agent.Value.stats.capabilities.speed;
         DoFirstGoal();
         Debug.Log($"PawnAgent: Agent {view.name} started their turn with 3 action points");
     }
@@ -170,7 +170,7 @@ public class PawnAgentTestControl : IPawnAgentControl
 
     public void StartAction(PawnActionEvent action, PawnAgentController pawn)
     {
-        Debug.Log($"PawnAgent: Agent {view.name} did action {action.action.name} costing {action.action.ActionPointCost} action points with {view.agent.Value.ActionPoints} remaining");
+        Debug.Log($"PawnAgent: Agent {view.name} did action {action.action.name} costing {action.action.ActionPointCost} action points with {view.agent.Value.stats.vitals.ActionPoints} remaining");
     }
 
     public void EndAction(PawnActionEvent action, PawnAgentController pawn)
@@ -198,7 +198,7 @@ public class PawnAgentTestControl : IPawnAgentControl
     {
         yield return new WaitUntil(() => view.scheduler != null);
         view.agent.Value.UpdatePlan(view);
-        while (view.agent.Value.ActionPoints > 0)
+        while (view.agent.Value.stats.vitals.ActionPoints > 0)
         {
 
             if (view.scheduler.HasActionsQueued() == false)
@@ -328,7 +328,7 @@ public class PawnNPCController : IPawnAgentControl
 
     public void EndAction(PawnActionEvent action, PawnAgentController pawn)
     {
-        if(view.agent.Value.ActionPoints <= 0 || view.scheduler.HasActionsQueued() == false)
+        if(view.agent.Value.stats.vitals.ActionPoints <= 0 || view.scheduler.HasActionsQueued() == false)
         {
             view.activeEncounter.GetAgentTurn(view).EndTurn();
         }

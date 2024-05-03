@@ -12,6 +12,8 @@ public class PawnAgentData
     public static System.Action<PawnAgentData, PawnGoalData> OnGoalCompleted;
 
 
+    public ActionStats stats;
+
     [SerializeReference, SubclassSelector]
     public List<PawnSensorData> sensors;
 
@@ -27,9 +29,9 @@ public class PawnAgentData
     protected PawnActionPlanner planner;
 
 
-    public int ActionPoints = 10;
+    //public int ActionPoints = 10;
 
-    public int Initiative = 5;
+    //public int Initiative = 5;
 
     public void UpdatePlan(PawnAgentView view)
     {
@@ -43,9 +45,9 @@ public class PawnAgentData
 
     public bool ProcessAction(PawnActionData action)
     {
-        if(action.ActionPointCost <= ActionPoints)
+        if(action.ActionPointCost <= stats.vitals.ActionPoints)
         {
-            ActionPoints -= action.ActionPointCost;
+            stats.vitals.ActionPoints -= action.ActionPointCost;
             //Debug.Log($"PawnAgent: Process Action {action.name} costs {action.ActionPointCost} Action Points");
             return true;
         }

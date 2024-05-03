@@ -13,6 +13,47 @@ MonoBehaviour:
   m_Name: Simple Pawn Agent
   m_EditorClassIdentifier: 
   Value:
+    stats:
+      vitals:
+        HealthPoints: 19
+        ActionPoints: 19
+        VitalPoints: 22
+      farnecc:
+        fit: 3
+        aware: 7
+        rigor: 3
+        nimble: 5
+        educated: 7
+        charm: 8
+        chance: 8
+      capabilities:
+        initiative: 4
+        speed: 2
+        defense: 2
+        offense: 2
+        deescalate: 4
+      skills:
+        trade: 50
+        sidearms: 40
+        rifles: 30
+        demolitions: 40
+        infiltration: 40
+        infirmary: 30
+        battery: 20
+        mechanic: 30
+        stealth: 30
+        influence: 50
+        martialarts: 20
+        armor: 20
+        survival: 30
+        pickpocket: 40
+        evasion: 20
+        intimidation: 30
+        computers: 40
+        perception: 40
+        leadership: 50
+        endurance: 20
+        woo: 30
     sensors: []
     motors:
     - rid: 4970871836299493377
@@ -36,8 +77,6 @@ MonoBehaviour:
       Variable: {fileID: 11400000, guid: 501b8644ff901d04fbd9ac31095224a9, type: 2}
     planner:
       rid: 4970871836299493376
-    ActionPoints: 10
-    Initiative: 5
   references:
     version: 2
     RefIds:
